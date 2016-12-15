@@ -18,11 +18,14 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  position: relative;
+}
+
 header img {
   width: 40px;
   float: left;
   top: 2px;
-  margin: 0;
 }
 
 main h1 {
@@ -44,7 +47,7 @@ section h1 {
 
 body header h1 {
   text-align: center;
-  font-family: "Supermercado One"; cursive;
+  font-family: "Supermercado One", cursive;
   color: #000;
 }
 
@@ -75,6 +78,7 @@ article header h1 {
   font-family: Gidugu, sans-serif;
   color: #000;
   font-size: 1.4em;
+  width: 100%;
 }
 
 .box-1 nav a {
@@ -215,10 +219,6 @@ section ul li {
   background-color: #fff;
 }
 
-.cards {
-  margin: 2em 1em;
-}
-
 section ul {
   margin: 5em;
 }
@@ -244,8 +244,8 @@ footer {
   color: #000;
   text-align: center;
   border-top: 1px solid #639;
-  padding-top: .50em;
-  margin-top: 0;
+  margin-top: 3em;
+  clear: both;
 }
 
 section {
@@ -346,9 +346,23 @@ section {
     font-size: 110%;
   }
 
+  section ul li {
+    width: 50%;
+  }
+
   .nav li {
     display: inline-block;
     width: 24%;
+  }
+
+  section ul {
+    margin-bottom: 2em;
+    clear: both;
+  }
+
+  .cards li {
+    float: left;
+    width: 50%;
   }
 
   section ul li:first-child {
@@ -360,10 +374,6 @@ section {
   }
 
   section img {
-    width: 50%;
-  }
-
-  section ul li {
     width: 50%;
   }
 
@@ -384,29 +394,26 @@ section {
     text-decoration: none;
   }
 
+  .box-1 .nav li {
+    width: 25%;
+  }
+
   .box-1 nav li:nth-child(4) {
     float: right;
+  }
+
+  .nav a {
+    width: 100%;
+    float: none;
+    display: inline-block;
   }
 
   .box-1 .nav a {
     font-size: 2em;
   }
 
-  .box-1 .nav li {
-    width: 25%;
-  }
-
   .box-1 nav li:nth-child(1) {
     float: left;
-  }
-
-  .box-1 nav li:nth-child(4) {
-    float: right;
-  }
-
-  div nav a {
-    text-align: center;
-    width: 100%;
   }
 
   .nav-label {
@@ -417,12 +424,6 @@ section {
     display: inline-block;
     width: 100%;
     margin-bottom: 1em;
-  }
-
-  .nav a {
-    width: 100%;
-    float: none;
-    display: inline-block;
   }
 
   div nav {
@@ -449,11 +450,6 @@ section {
   body article {
     margin-right: 2px;
   }
-
-  .cards li {
-    float: left;
-    width: 50%;
-  }
 }
 
 @media only screen and (min-width: 60em) {
@@ -467,12 +463,19 @@ section {
     top: 25%;
   }
 
-  .box-1 h1 {
-    float: none;
-    width: 100%;
+  header h1 {
+    float: left;
+    width: 40%;
+    text-align: center;
   }
 
-  .nav a {
+  article header h1 {
+    width: 100%;
+    clear: both;
+  }
+
+  .box-1 h1 {
+    float: none;
     width: 100%;
   }
 
@@ -494,19 +497,8 @@ section {
     clear: both;
   }
 
-  article header h1 {
-    width: 100%;
-    clear: both;
-  }
-
   main {
     clear: both;
-  }
-
-  header h1 {
-    float: left;
-    width: 40%;
-    text-align: center;
   }
 
   header div img {
