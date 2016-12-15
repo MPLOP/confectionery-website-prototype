@@ -245,6 +245,7 @@ footer {
   text-align: center;
   border-top: 1px solid #639;
   padding-top: .50em;
+  margin-top: 0;
 }
 
 section {
