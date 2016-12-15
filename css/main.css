@@ -532,10 +532,6 @@ section {
     margin-bottom: 3em;
   }
 
-  body {
-    position: relative;
-  }
-
   .cards li {
     width: 33.3%;
   }
