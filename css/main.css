@@ -56,6 +56,11 @@ article header h1 {
   clear: both;
 }
 
+.img-flex {
+  width: 100%;
+  margin: 0;
+}
+
 .box-1 {
   position: absolute;
   background-color: rgba(1, 1, 1, .5);
@@ -75,6 +80,11 @@ article header h1 {
 .box-1 nav a {
   color: #fff;
   font-size: 2em;
+}
+
+.cards {
+  margin-bottom: 2em;
+  clear: both;
 }
 
 .cards div a {
@@ -234,6 +244,7 @@ footer {
   color: #000;
   text-align: center;
   border-top: 1px solid #639;
+  padding-top: .50em;
 }
 
 section {
@@ -276,11 +287,6 @@ section {
     display: inline-block;
     width: 50%;
     float: left;
-  }
-
-  article div img {
-    width: 100%;
-    margin: 0;
   }
 
   div nav {
@@ -551,7 +557,7 @@ section {
 
   div nav {
     position: absolute;
-    top: 10%;
+    top: 5%;
     text-align: right;
   }
 
